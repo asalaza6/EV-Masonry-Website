@@ -1,4 +1,4 @@
-import {Box, Flex, Text, Image, Button} from '@chakra-ui/react';
+import {Box, Flex, Text, Image} from '@chakra-ui/react';
 import {Link} from 'react-router-dom'
 
 function MyLayout (props){
