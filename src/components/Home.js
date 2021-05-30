@@ -2,6 +2,7 @@ import React from 'react';
 import {Box, Image,Text,Button} from '@chakra-ui/react';
 import MyLayout from './MyLayout';
 import Slideshow from './Slideshow';
+import {Link} from 'react-router-dom'
 class Home extends React.Component{
     render(){
         return(
@@ -24,9 +25,9 @@ class Home extends React.Component{
                         high quality masonry designs 
                         to you in the Coachella Valley!
                     </Text>
-                    
-                    <Button variant="outline" alignSelf="end"
-                        onClick={()=>{window.location = "/about"}}> Learn more about us here!</Button>
+                    <Link to = "/about">
+                        <Button variant="outline" alignSelf="end"> Learn more about us here!</Button>  
+                    </Link> 
                 </Box>
                 <Text p = "10px" bg = "gray.200" fontSize="40px" fontWeight="600">
                 Our projects 
@@ -40,9 +41,10 @@ class Home extends React.Component{
                     </Text>
                     <Box position = "relative" >
                         <Slideshow/>
-                        <Button shadow="lg" p = "30px" bg = "white"  h = "30px" position = "absolute" 
-                            zIndex={1} bottom = {0} right = {0} variant="solid" alignSelf="end"
-                            onClick={()=>{window.location = "/projects"}}> Check out our projects!</Button>
+                        <Link to = "/about">
+                            <Button shadow="lg" p = "30px" bg = "white"  h = "30px" position = "absolute" 
+                                zIndex={1} bottom = {0} right = {0} variant="solid" alignSelf="end"> Check out our projects!</Button>
+                        </Link> 
                     </Box>
                 </Box>
                 
