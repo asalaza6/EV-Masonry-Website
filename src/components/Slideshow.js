@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Button,Text,Image,Flex,SlideFade, AspectRatio} from '@chakra-ui/react';
+import {Box, Text,Image,Flex,SlideFade, AspectRatio} from '@chakra-ui/react';
 const slideImages = [
     {image: '../image1.jpg',
     desc: 'desc1'},
@@ -47,7 +47,7 @@ class Slideshow extends React.Component {
     }
     onPrev(){
       this.setState({slideOpen:false});
-      setTimeout(()=>{this.setState({direction:false,changed: true,position:(this.state.position == 0 ? this.state.length-1: this.state.position-1)});}, 
+      setTimeout(()=>{this.setState({direction:false,changed: true,position:(this.state.position === 0 ? this.state.length-1: this.state.position-1)});}, 
         100);
       
       setTimeout(()=>{this.setState({slideOpen:true,direction:true});}, 

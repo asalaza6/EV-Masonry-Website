@@ -1,4 +1,4 @@
-import {Box, Flex, Text, Button, Slide, Image, IconButton, Icon} from '@chakra-ui/react';
+import {Box, Flex, Text, Button, Slide, Image, IconButton} from '@chakra-ui/react';
 import {HamburgerIcon} from '@chakra-ui/icons';
 import {Link} from 'react-router-dom'
 import {useState, useEffect} from 'react';

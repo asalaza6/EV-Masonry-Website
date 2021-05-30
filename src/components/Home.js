@@ -2,7 +2,6 @@ import React from 'react';
 import {Box, Image,Text,Button} from '@chakra-ui/react';
 import MyLayout from './MyLayout';
 import Slideshow from './Slideshow';
-import AnimatedImage from './AnimatedImage';
 class Home extends React.Component{
     render(){
         return(
