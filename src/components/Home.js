@@ -41,7 +41,7 @@ class Home extends React.Component{
                     </Text>
                     <Box position = "relative" >
                         <Slideshow/>
-                        <Link to = "/about">
+                        <Link to = "/projects">
                             <Button shadow="lg" p = "30px" bg = "white"  h = "30px" position = "absolute" 
                                 zIndex={1} bottom = {0} right = {0} variant="solid" alignSelf="end"> Check out our projects!</Button>
                         </Link> 
