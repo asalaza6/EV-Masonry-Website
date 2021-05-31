@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import {useState, useEffect} from 'react';
 function MyLayout (props){
     const mobileSize = 500;
-    let [development, toggleDev] = useState(true);
+    let [development, toggleDev] = useState(false);
     let [menu, toggleMenu] = useState(false);
     let [mobile, setMobile] = useState(()=>{
         var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -21,7 +21,7 @@ function MyLayout (props){
         const resizeListener = () => {
             clearTimeout(timeoutId);
             timeoutId = setTimeout(()=>{
-                console.log("resize");
+                // console.log("resize");
                 var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
                 setMobile(width <= mobileSize);
             },150);
@@ -85,16 +85,16 @@ function MyLayout (props){
                 {(mobile && menu)?
                     <Flex direction = "column">
                         <Link to = "/">
-                            <Text shadow = "base" fontSize="md">Home</Text>  
+                            <Text paddingY = "10px" shadow = "base" fontSize="md">Home</Text>  
                         </Link>
                         <Link to = "/about">
-                            <Text shadow = "base" fontSize="md">About</Text>  
+                            <Text paddingY = "10px" shadow = "base" fontSize="md">About</Text>  
                         </Link>
                         <Link to = "/projects">
-                            <Text fontSize="md">Projects</Text>  
+                            <Text paddingY = "10px" shadow = "base" fontSize="md">Projects</Text>  
                         </Link>
                         <Link to = "/contact">
-                            <Text shadow = "base" fontSize="md">Contact</Text>  
+                            <Text paddingY = "10px" shadow = "base" fontSize="md">Contact</Text>  
                         </Link>
                     </Flex>:null}
             </Box>

@@ -5,9 +5,9 @@ class Home extends React.Component{
     render(){
         return(
             <MyLayout>
-                <Slideshow title = "Stonework"/>
-                <Slideshow title = "Concrete"/>
-                <Slideshow title = "Firepits"/>
+                <Slideshow images="outdoor" title = "Outdoor"/>
+                <Slideshow images="brick" title = "Brick"/>
+                <Slideshow images="misc" title = "Lovely solutions"/>
             </MyLayout>
         )
     }
