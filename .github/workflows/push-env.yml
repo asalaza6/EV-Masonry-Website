@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
+
     - name: Process
       env:
         REACT_APP_EMAILJS_SERVICE: ${{ secrets.EMAILJS_SERVICE }}
