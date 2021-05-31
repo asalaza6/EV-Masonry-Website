@@ -33,7 +33,7 @@ export default class Contact extends React.Component {
     evt.preventDefault();
     
     // console.log(evt.target);
-        console.log("Message sent. Thank you!",evt.target,process.env);
+    console.log("Message sent. Thank you!",process.env.REACT_APP_EMAILJS_SERVICE);
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE,
         process.env.REACT_APP_EMAILJS_TEMPLATE,
       evt.target,
