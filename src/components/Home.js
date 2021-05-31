@@ -11,7 +11,7 @@ class Home extends React.Component{
                     <Box position = "absolute" left = "50%" top = "50%" marginLeft="-150px" marginTop="-150px" width = "300px" height = "300px" alignSelf="center" zIndex={2} textColor="white" fontSize="60px" fontWeight="600">
                         EV Masonry
                     </Box>
-                    <Image h = "100%" w = "100%" objectFit = "cover" src = "/images/image6.jpg"/>
+                    <Image h = "100%" w = "100%" objectFit = "cover" src = "/images/outdoor5.jpg"/>
                 </Box>
                 <Text p = "10px" bg = "gray.200" fontSize="40px" fontWeight="600">
                     Who are we? 

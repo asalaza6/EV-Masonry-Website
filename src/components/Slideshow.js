@@ -59,8 +59,8 @@ class Slideshow extends React.Component {
       this.onPrev = this.onPrev.bind(this);
       this.state = {
         position: 0,
-        images: this.props.images || "misc",
-        length: slideImages[this.props.images || "misc"].length,
+        images: this.props.images || "main",
+        length: slideImages[this.props.images || "main"].length,
         changed: false,
         selected: false,
         slideOpen:true,
