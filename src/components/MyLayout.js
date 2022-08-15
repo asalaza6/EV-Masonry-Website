@@ -139,12 +139,12 @@ function MyLayout (props){
                     <Flex   flex = {1} direction = "column">
                         <Text fontSize = "md" paddingBottom="10px" fontWeight = "600">Contact</Text>
                         <Text fontSize = "small">EV Masonry</Text>
-                        <Text fontSize = "small">Street Address</Text>
+                        <Text fontSize = "small">License #1093785</Text>
                         <Text fontSize = "small">Desert Hot Springs, Ca 92240</Text>
-                        <Text fontSize = "small">(760)-XXX-XXXX</Text>
+                        <Text fontSize = "small">(760)-272-6940</Text>
                     </Flex>
                 </Flex>
-                <Text p ="20px" fontSize = "small">Copyright © 2021 EV Masonry</Text>
+                <Text p ="20px" fontSize = "small">Copyright © 2022 EV Masonry</Text>
             </Box>
         </Box>
     );
